@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Smart Office Editor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="top-bar">
+    <h1>Smart Office</h1>
+    <span class="subtitle">Offline Document Editor</span>
+  </header>
+
+  <div class="container">
+
+    <div class="toolbar">
+      <button onclick="saveDoc()">💾 Save</button>
+      <button onclick="loadTemplate()">📄 Load Template</button>
+      <button disabled title="Design only (offline STT)">
+        🎤 Voice (Design)
+      </button>
+    </div>
+
+    <div id="editor" contenteditable="true" class="editor">
+      Start typing your document here...
+    </div>
+
+  </div>
+
+  <footer class="footer">
+    Smart Office • Offline • Local Server
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
